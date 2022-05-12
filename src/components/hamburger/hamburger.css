@@ -1,0 +1,48 @@
+.hamburger {
+  height: 1.1rem;
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 22px;
+  background: var(--footer-color);
+  transition: all 0.3s ease-in-out;
+  transform-origin: 1px;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  content: ' ';
+  display: block;
+  height: 2px;
+  width: 22px;
+  background: var(--footer-color);
+  transition: all 0.3s ease-in-out;
+  transform-origin: 1px;
+}
+
+.hamburger span::before {
+  transform: translateY(-5px);
+  /* background: yellow; */
+}
+.hamburger span::after {
+  transform: translateY(calc(-1.5px + 5px));
+  /* background: green; */
+}
+
+.hamburger.open span {
+  visibility: hidden;
+}
+
+.hamburger.open span::before {
+  transform: rotate(45deg) translate(0px, -8.5px);
+  visibility: visible;
+}
+.hamburger.open span::after {
+  transform: rotate(-45deg) translate(0, 9px);
+  visibility: visible;
+}

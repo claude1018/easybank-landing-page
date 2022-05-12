@@ -1,0 +1,68 @@
+.easybank__features-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.easybank__features-header h2 {
+  font-family: var(--public-sans);
+  font-size: clamp(2rem, 2vw + 0.875rem, 2.625rem);
+  color: var(--footer-color);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+}
+
+.easybank__features-header p {
+  font-family: var(--public-sans);
+  min-width: 18.25rem;
+  max-width: 50%;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+  color: var(--text-body);
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto;
+}
+
+.easybank__features-list {
+  display: grid;
+  grid-template-areas: 'online' 'budgeting' 'onboarding' 'api';
+  gap: 1.75rem;
+  justify-content: center;
+}
+
+.easybank__features-list:first-child {
+  grid-area: online;
+}
+.easybank__features-list:nth-child(2) {
+  grid-area: budgeting;
+}
+.easybank__features-list:nth-child(3) {
+  grid-area: onboarding;
+}
+.easybank__features-list:last-child {
+  grid-area: api;
+}
+
+@media only screen and (min-width: 800px) {
+  .easybank__features-list {
+    grid-template-areas: 'online budgeting' 'onboarding api';
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .easybank__features {
+    margin-top: -10%;
+  }
+  .easybank__features-header {
+    text-align: left;
+  }
+  .easybank__features-header p {
+    margin: 0;
+  }
+  .easybank__features-list {
+    grid-template-areas: 'online budgeting onboarding api';
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

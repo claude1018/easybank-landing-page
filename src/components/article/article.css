@@ -1,0 +1,88 @@
+.easybank__article {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 100%;
+  box-shadow: 0 0 0.5rem 1px #cac9c9;
+}
+
+.easybank__article figure img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  object-fit: fill;
+}
+
+.easybank__article-content {
+  padding: 1.5rem;
+}
+.easybank__article-content span {
+  display: block;
+  font-family: var(--public-sans);
+  color: var(--text-body);
+  font-size: clamp(0.525rem, 1vw + 0.875rem, 1rem);
+  font-weight: 400;
+}
+.easybank__article-content h4 {
+  font-family: var(--public-sans);
+  color: var(--footer-color);
+  font-size: clamp(1.125rem, 1vw + 0.875rem, 1.5rem);
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.easybank__article-content h4:hover {
+  color: var(--primary-two);
+}
+
+.easybank__article-content p {
+  font-family: var(--public-sans);
+  color: var(--text-body);
+  font-size: clamp(1rem, 1vw + 0.375rem, 1.125rem);
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 420px) {
+  .easybank__article {
+    width: auto;
+  }
+  .easybank__article figure img {
+    width: 100%;
+    height: auto;
+    max-height: 53rem;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .easybank__article {
+    width: 18rem;
+  }
+  .easybank__article figure img {
+    /* width: auto; */
+    height: 12.5rem;
+    max-height: 53rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .easybank__article {
+    width: 16rem;
+  }
+  .easybank__article figure img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .easybank__article {
+    width: auto;
+  }
+  .easybank__article figure img {
+    width: auto;
+    height: 12.5rem;
+    max-height: 53rem;
+  }
+}

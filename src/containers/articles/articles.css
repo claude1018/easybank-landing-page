@@ -1,0 +1,65 @@
+.easybank__articles {
+  text-align: center;
+}
+
+.easybank__articles-header h2 {
+  font-family: var(--public-sans);
+  font-size: clamp(2rem, 2vw + 0.875rem, 2.625rem);
+  color: var(--footer-color);
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  margin-top: 4rem;
+}
+
+.easybank__articles-list {
+  display: grid;
+  grid-template-areas: 'one' 'two' 'three' 'four';
+  justify-items: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.easybank__articles-list:first-child {
+  grid-area: one;
+}
+.easybank__articles-list:nth-child(2) {
+  grid-area: two;
+}
+.easybank__articles-list:nth-child(3) {
+  grid-area: three;
+}
+.easybank__articles-list:last-child {
+  grid-area: four;
+}
+
+@media only screen and (min-width: 800px) {
+  .easybank__articles-header {
+    padding: 0 0 4rem 0;
+  }
+  .easybank__articles-list {
+    grid-template-areas: 'one two' 'three four';
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .easybank__articles {
+    padding: 0;
+  }
+  .easybank__articles-header {
+    text-align: left;
+  }
+  .easybank__articles-list {
+    grid-template-areas: 'one two three' 'four four four';
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  .easybank__articles {
+    margin-top: 8.75rem;
+  }
+  .easybank__articles-list {
+    grid-template-areas: 'one two three four';
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  background: #84e1a7;
+}
+
+.gradient__ltr {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2BB7DA', endColorstr='#31D35C', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.page__section-in {
+  padding-inline: 1.25rem;
+}
+
+.page__section-out {
+  margin: 4.25rem 1.25rem;
+}
+
+@media only screen and (min-width: 520px) {
+  .page__section-in {
+    padding-inline: 1.25rem;
+  }
+
+  .page__section-out {
+    margin: 4.25rem 1.25rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .page__section-in {
+    padding-inline: 5rem;
+  }
+
+  .page__section-out {
+    margin: 0 5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .page__section-in {
+    padding: 0 8.75rem;
+  }
+
+  .page__section-out {
+    margin: 4.25rem 8.75rem;
+  }
+}
