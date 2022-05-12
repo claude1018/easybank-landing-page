@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/easybank-landing-page-using-react-SJdm_0t89)
+- Live Site URL: [Vercel](https://easybank-landing-page-claude.vercel.app/)
 
 ## My process
 
