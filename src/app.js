@@ -6,13 +6,17 @@ import './app.css';
 const App = () => {
   return (
     <>
-      <div>
+      <header>
         <Navbar />
         <Intro />
-      </div>
-      <Features />
-      <Articles />
-      <Footer />
+      </header>
+      <main>
+        <Features />
+        <Articles />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

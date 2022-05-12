@@ -9,7 +9,7 @@ const article = ({ img, author, title, children }) => {
       </figure>
       <div className="easybank__article-content">
         <span>{author}</span>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <p>{children}</p>
       </div>
     </div>

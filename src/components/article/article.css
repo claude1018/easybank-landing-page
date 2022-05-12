@@ -23,7 +23,7 @@
   font-size: clamp(0.525rem, 1vw + 0.875rem, 1rem);
   font-weight: 400;
 }
-.easybank__article-content h4 {
+.easybank__article-content h3 {
   font-family: var(--public-sans);
   color: var(--footer-color);
   font-size: clamp(1.125rem, 1vw + 0.875rem, 1.5rem);
