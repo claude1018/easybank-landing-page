@@ -67,6 +67,12 @@
   }
 }
 
+@media only screen and (min-width: 1050px) {
+  .easybank__article-content {
+    text-align: left;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .easybank__article {
     width: 16rem;
